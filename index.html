@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body{
+            background: rgb(129,255,135);
+            background: radial-gradient(circle, rgba(129,255,135,0.4397408621651786) 
+            25%, rgba(252,70,107,1) 48%);
+        }
+        
+        fieldset {
+            width: 500px;
+            border: 5px solid black;
+            border-radius: 25px;
+        }
+        input:required{
+            border: 2px solid rgb(32, 231, 14);
+        }
+        input:optional{
+            border: 2px dashed rgb(40, 10, 212);
+
+        }
+        INPUT[readonly]{
+            background-color: rgb(230, 17, 184);
+            font-weight: 900;
+        }
+        select{
+            background-color: rgba(62, 111, 100, 0.941);
+            font-size: 20px;
+            font-weight: 50px;
+            font-color:rgb(0, 179, 255);
+            cursor: pointer;
+        }
+        input[type="radio"]:checked
+        {
+            height: 25px;
+            width: 25px;
+            
+        }
+        input[type="radio"]:checked + label
+        {
+            color: red;
+            font-size: 20px;
+        }
+
+     </style>
+        
+
+    
+</head>
+<body>
+    <fieldset>
+        <form action="">
+        <table>
+            <legend>Personal information</legend>
+
+            <marquee direction="left"><h1>COURSE REGISTRATION FORM</h1></marquee>
+    
+            <tr>
+                <td><labul>Name</labul></td>
+                <td><input type="text" class="sudarshan" placeholder="Sudarshan" required/> <br></td>
+            </tr>
+            <tr>
+                <td><labul>Surname</labul></td>
+                <td><input type="text" placeholder="Lingam" optional/> <br></td>
+            </tr>
+            <tr>
+                <td><labul>Email</labul></td>
+                <td><input type="Email" placeholder="@mail.com" required/> <br></td>
+            </tr>
+            <tr>
+                <td><labul>Paasword</labul></td>
+                <td><input type="password" placeholder="........."/> required> <br></td>
+            </tr>
+            <tr>
+                <td><label>Conform password</label></td>
+                <td><input type="password" placeholder="........." required/> <br></td>
+            </tr>
+            <tr>
+                <td><labul>DOB</labul></td>
+                <td><input type="Date" placeholder="00/00/0000" required/> <br></td>
+            </tr>
+            <tr>
+                <td><labul>Gender</labul></td>
+                <td><input type="radio" name="Gender" name="male" Value="m"/>
+                    <labul>Male</labul>
+                    <input type="radio" NAME="Gender" name="Female" value="FM"/> <labul>Female</labul>
+                    <input type="radio"name="Gender" name="others" value="Trans"/> <labul>Others</labul><br>
+                   </td>
+            </tr>
+            <tr>
+                <td><labul>Select country</labul></td>
+                <td><select> 
+                    <option value="">USA</option> 
+                    <option value="">RASYA</option>
+                    <option value="">INDIA</option>
+                    <option value="">PAKISTAN</option>
+                    <option value="">CHINA</option> 
+                </select> <br></td>
+            </tr>
+            <tr>
+                <td><label>Upload picture</label> </td>
+                <td><input type="file"> <br></td>
+            </tr>
+            
+            <tr>
+           <td><input type="reset" submit="submit"></td>
+           <label for=""></label>
+            </tr>
+            
+        </form>
+            </table>
+    </fieldset>
+    
+    
+    
+    <form>
+    <fieldset>
+        <table>
+            <legend>Course details</legend>
+            <tr>
+                <td><label for="">Select course</label></td>
+                <td><select name="" id="">
+                    <option value="">FULL STOCK JAVA</option>
+                    <option value="">FULL STOCK PYTHON</option>
+                </select> <br></td>
+            </tr>
+                <tr>
+                    <td><label>Delivery mode</label></td>
+                    <td><input type="radio" name="TAP ACADAMY" name="online"/>Online
+                        <input type="radio" name="TAP ACADAMY" name="Ofline"/>Ofline <br></td>
+                </tr>
+                <tr>
+                    <td><labul>INSTITUTE NAME:</labul></td> <br>
+                    <td><input type="text" value="TAP ACADAMY" READONLY/></td>
+
+                </tr>
+                    <tr>
+                        <td><labul>Comment:-</labul> <br></td>
+                        <td><textarea name="Comment" id="" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        
+                        <td><input type="submit" value="submit" > </td>
+                        <tr>
+                            <button><td><a href="/Sudarshan resume.pdf">click here download</a></td></button>
+                        </tr>
+                        </form>
+                    
+                
+        </table>
+    </fieldset>
+</body>
+</html>
